@@ -1,3 +1,4 @@
+from venv import logger
 from app.commands import Command
 from multiprocessing import current_process
 
@@ -9,9 +10,14 @@ class MultiplyCommand(Command):
         try:
             x = int(x)  # Convert input to integer
             y = int(y)  # Convert input to integer
-            print(f"Process {current_process().name}: Result = {x * y}")
+            result = x * y
+            # Log the result with process information
+            logger.info(f"Process {current_process().name}: Command 'add' executed with result = {result}")
+            print(f"Process {current_process().name}: Result = {result}")  # Optionally print to the console
+            return result
         except ValueError:
-            print("Error: Invalid input! Please enter numeric values.")
+            logger.error(f"Process {current_process().name}: Invalid input! Please enter numeric values.")
+            print("Invalid input! Please enter numeric values.")
 
 def register(handler):
     """Registers the MultiplyCommand dynamically."""

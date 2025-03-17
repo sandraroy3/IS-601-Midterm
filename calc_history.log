@@ -1,0 +1,11 @@
+2025-03-16 23:24:12,774 - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-16 23:25:48,738 - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-16 23:26:10,047 - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-17 00:32:43,037 - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-17 00:43:20,002 - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-17 00:45:30,596 - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-17 00:47:48,494 - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-17 00:49:08,977 - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-17 00:50:33,070 - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-17 00:54:23,379 - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-17 00:56:37,772 - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
