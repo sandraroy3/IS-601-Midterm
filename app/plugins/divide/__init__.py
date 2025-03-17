@@ -1,5 +1,22 @@
+import logging
 from app.commands import Command
 from multiprocessing import current_process
+
+# Set up the logger
+logger = logging.getLogger('calc_logger')
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+# Console handler
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(formatter)
+
+# File handler to log to a file
+file_handler = logging.FileHandler('calc_history.log')
+file_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+logger.addHandler(file_handler)
 
 class DivideCommand(Command):
     """Command that performs division with error handling for invalid inputs."""
@@ -12,12 +29,19 @@ class DivideCommand(Command):
             if y == 0:
                 raise ZeroDivisionError("Error: Division by zero is not allowed.")
 
-            print(f"Process {current_process().name}: Result = {x / y}")
+            result = x / y
+            # Log the result with process information
+            logger.info(f"Process {current_process().name}: Command 'divide' executed with result = {result}")
+            print(f"Process {current_process().name}: Result = {result}")
 
         except ValueError:
-            print("Invalid input! Please enter numeric values.")
+            error_msg = "Invalid input! Please enter numeric values."
+            logger.error(f"Process {current_process().name}: {error_msg}")
+            print(error_msg)
         except ZeroDivisionError as e:
-            print(e)  # Displays custom division by zero error message
+            # Log division by zero error
+            logger.error(f"Process {current_process().name}: {e}")
+            print(e)  # Display custom division by zero error message
 
 def register(handler):
     """Registers the DivideCommand dynamically with CommandHandler."""

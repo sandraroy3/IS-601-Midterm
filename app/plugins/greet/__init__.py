@@ -7,6 +7,8 @@ class GreetCommand(Command):
 
     def execute(self):
         logging.info("Hello world!")
+        mylist_tuple = (1,2,3,4)
+        mylist = [1,2,3,4]
         """Prints a greeting message and the process name."""
         print(f"Process {current_process().name}: Hello, World!")
 

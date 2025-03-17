@@ -1,0 +1,6 @@
+Command,Result,Timestamp
+add 8 9,No result,2025-03-17 00:53:56.970068
+subtract 4 1,No result,2025-03-17 00:54:09.505097
+multiply 60 8,No result,2025-03-17 00:54:15.896204
+divide 8 0,No result,2025-03-17 00:54:23.383843
+greet,No result,2025-03-17 00:54:48.611879

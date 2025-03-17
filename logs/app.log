@@ -1,33 +1,27 @@
-2025-03-16 22:44:25,522 - root - INFO - Logging configured.
-2025-03-16 22:44:25,522 - root - INFO - Logger succcessfully configured,
-2025-03-16 22:44:25,522 - root - INFO - Environment varibales loaded.
-2025-03-16 22:44:25,522 - root - INFO - Command handler initialized.
-2025-03-16 22:44:25,523 - root - WARNING - Plugins package 'calculator.plugins' not found.
-2025-03-16 22:44:25,523 - root - INFO - Calculator started. Type 'exit' to exit.
-2025-03-16 22:44:41,497 - root - INFO - Calculator exited.
-2025-03-16 22:44:41,499 - root - INFO - Calculator shutdown.
-2025-03-16 22:44:43,008 - root - INFO - Logging configured.
-2025-03-16 22:44:43,008 - root - INFO - Logger succcessfully configured,
-2025-03-16 22:44:43,009 - root - INFO - Environment varibales loaded.
-2025-03-16 22:44:43,009 - root - INFO - Command handler initialized.
-2025-03-16 22:44:43,009 - root - WARNING - Plugins package 'calculator.plugins' not found.
-2025-03-16 22:44:43,009 - root - INFO - Calculator started. Type 'exit' to exit.
-2025-03-16 22:48:16,096 - root - INFO - Calculator shutdown.
-2025-03-16 22:48:18,338 - root - INFO - Logging configured.
-2025-03-16 22:48:18,338 - root - INFO - Logger succcessfully configured,
-2025-03-16 22:48:18,338 - root - INFO - Environment varibales loaded.
-2025-03-16 22:48:18,338 - root - INFO - Command handler initialized.
-2025-03-16 22:48:18,339 - root - WARNING - Plugins package 'calculator.plugins' not found.
-2025-03-16 22:48:18,339 - root - INFO - Calculator started. Type 'exit' to exit.
-2025-03-16 22:49:35,156 - root - INFO - Logging configured.
-2025-03-16 22:49:35,156 - root - INFO - Logger succcessfully configured,
-2025-03-16 22:49:35,156 - root - INFO - Environment varibales loaded.
-2025-03-16 22:49:35,156 - root - INFO - Command handler initialized.
-2025-03-16 22:49:35,164 - root - INFO - Command 'add' from plugin 'add' registered.
-2025-03-16 22:49:35,165 - root - INFO - Command 'divide' from plugin 'divide' registered.
-2025-03-16 22:49:35,165 - root - INFO - Command 'exit' from plugin 'exit' registered.
-2025-03-16 22:49:35,166 - root - INFO - Command 'greet' from plugin 'greet' registered.
-2025-03-16 22:49:35,167 - root - INFO - Command 'menu' from plugin 'menu' registered.
-2025-03-16 22:49:35,167 - root - INFO - Command 'multiply' from plugin 'multiply' registered.
-2025-03-16 22:49:35,168 - root - INFO - Command 'subtract' from plugin 'subtract' registered.
-2025-03-16 22:49:35,168 - root - INFO - App started. Type 'exit' to exit.
+2025-03-17 00:53:34,882 - root - INFO - Logging configured.
+2025-03-17 00:53:34,882 - root - INFO - Logger successfully configured.
+2025-03-17 00:53:34,882 - root - INFO - Environment variables loaded.
+2025-03-17 00:53:34,882 - root - INFO - Command handler initialized.
+2025-03-17 00:53:34,884 - root - INFO - No previous command history found.
+2025-03-17 00:53:34,886 - root - INFO - Command 'add' from plugin 'add' registered.
+2025-03-17 00:53:34,886 - root - INFO - Command 'csv' from plugin 'csv' registered.
+2025-03-17 00:53:34,887 - root - INFO - Command 'data' from plugin 'data' registered.
+2025-03-17 00:53:34,899 - root - INFO - Command 'divide' from plugin 'divide' registered.
+2025-03-17 00:53:34,899 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2025-03-17 00:53:34,900 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2025-03-17 00:53:34,900 - root - INFO - Command 'menu' from plugin 'menu' registered.
+2025-03-17 00:53:34,901 - root - INFO - Command 'multiply' from plugin 'multiply' registered.
+2025-03-17 00:53:34,901 - root - INFO - Command 'subtract' from plugin 'subtract' registered.
+2025-03-17 00:53:34,901 - root - INFO - App started. Type 'exit' to exit, 'clear_history' to clear, or 'delete_history <index>' to delete a record.
+2025-03-17 00:53:56,962 - app.plugins.add - INFO - Add command executed: 8 + 9 = 17
+2025-03-17 00:53:56,984 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-17 00:54:09,500 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 3
+2025-03-17 00:54:09,515 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-17 00:54:15,893 - venv - INFO - Process MainProcess: Command 'add' executed with result = 480
+2025-03-17 00:54:15,908 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-17 00:54:23,379 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-17 00:54:23,393 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-17 00:54:48,608 - root - INFO - Hello world!
+2025-03-17 00:54:48,620 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-17 00:54:50,961 - root - INFO - App exited.
+2025-03-17 00:54:50,963 - root - INFO - App shutdown.
