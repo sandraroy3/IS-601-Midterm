@@ -1,27 +1,31 @@
 from abc import ABC, abstractmethod
+from multiprocessing import Process
 
 class Command(ABC):
-    @abstractmethod 
-    def execute(self):
+    """Abstract base class for all commands."""
+    
+    @abstractmethod
+    def execute(self, *args):
         pass
 
 class CommandHandler:
+    """Handles command registration and execution dynamically using multiprocessing."""
+    
     def __init__(self):
         self.commands = {}
 
     def register_command(self, command_name: str, command: Command):
-        self.commands[command_name] =  command
+        """Registers a new command by name."""
+        self.commands[command_name] = command
 
-    def execute_command(self, command_name: str):
-        """ Look before you leap (LBYL) - Use when its less likely to work
-        if command_name in self.commands:
-            self.commands[command_name].exexute()
-        else: 
-            print(f"No such command: {command_name}") """
-        
-        """Easier to ask for forgiveness than permission (EAFP) - Use when its going to most likely work"""
+    def execute_command(self, command_name: str, *args):
+        """
+        Uses multiprocessing to execute the command in a separate process.
+        Passes collected arguments to avoid EOFError when using input().
+        """
         try:
-            self.commands[command_name].execute()
+            process = Process(target=self.commands[command_name].execute, args=args)
+            process.start()
+            process.join()  # Wait for the process to complete
         except KeyError:
-            print(f"No such command: {command_name}")
-        
+            print(f"No such command: {command_name}")  # Handles cases where command does not exist
