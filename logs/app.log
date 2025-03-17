@@ -1,0 +1,33 @@
+2025-03-16 22:44:25,522 - root - INFO - Logging configured.
+2025-03-16 22:44:25,522 - root - INFO - Logger succcessfully configured,
+2025-03-16 22:44:25,522 - root - INFO - Environment varibales loaded.
+2025-03-16 22:44:25,522 - root - INFO - Command handler initialized.
+2025-03-16 22:44:25,523 - root - WARNING - Plugins package 'calculator.plugins' not found.
+2025-03-16 22:44:25,523 - root - INFO - Calculator started. Type 'exit' to exit.
+2025-03-16 22:44:41,497 - root - INFO - Calculator exited.
+2025-03-16 22:44:41,499 - root - INFO - Calculator shutdown.
+2025-03-16 22:44:43,008 - root - INFO - Logging configured.
+2025-03-16 22:44:43,008 - root - INFO - Logger succcessfully configured,
+2025-03-16 22:44:43,009 - root - INFO - Environment varibales loaded.
+2025-03-16 22:44:43,009 - root - INFO - Command handler initialized.
+2025-03-16 22:44:43,009 - root - WARNING - Plugins package 'calculator.plugins' not found.
+2025-03-16 22:44:43,009 - root - INFO - Calculator started. Type 'exit' to exit.
+2025-03-16 22:48:16,096 - root - INFO - Calculator shutdown.
+2025-03-16 22:48:18,338 - root - INFO - Logging configured.
+2025-03-16 22:48:18,338 - root - INFO - Logger succcessfully configured,
+2025-03-16 22:48:18,338 - root - INFO - Environment varibales loaded.
+2025-03-16 22:48:18,338 - root - INFO - Command handler initialized.
+2025-03-16 22:48:18,339 - root - WARNING - Plugins package 'calculator.plugins' not found.
+2025-03-16 22:48:18,339 - root - INFO - Calculator started. Type 'exit' to exit.
+2025-03-16 22:49:35,156 - root - INFO - Logging configured.
+2025-03-16 22:49:35,156 - root - INFO - Logger succcessfully configured,
+2025-03-16 22:49:35,156 - root - INFO - Environment varibales loaded.
+2025-03-16 22:49:35,156 - root - INFO - Command handler initialized.
+2025-03-16 22:49:35,164 - root - INFO - Command 'add' from plugin 'add' registered.
+2025-03-16 22:49:35,165 - root - INFO - Command 'divide' from plugin 'divide' registered.
+2025-03-16 22:49:35,165 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2025-03-16 22:49:35,166 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2025-03-16 22:49:35,167 - root - INFO - Command 'menu' from plugin 'menu' registered.
+2025-03-16 22:49:35,167 - root - INFO - Command 'multiply' from plugin 'multiply' registered.
+2025-03-16 22:49:35,168 - root - INFO - Command 'subtract' from plugin 'subtract' registered.
+2025-03-16 22:49:35,168 - root - INFO - App started. Type 'exit' to exit.

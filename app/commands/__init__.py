@@ -9,23 +9,24 @@ class Command(ABC):
         pass
 
 class CommandHandler:
-    """Handles command registration and execution dynamically using multiprocessing."""
-    
     def __init__(self):
         self.commands = {}
 
-    def register_command(self, command_name: str, command: Command):
-        """Registers a new command by name."""
-        self.commands[command_name] = command
+    def register_command(self, name, command):
+        self.commands[name] = command
 
-    def execute_command(self, command_name: str, *args):
-        """
-        Uses multiprocessing to execute the command in a separate process.
-        Passes collected arguments to avoid EOFError when using input().
-        """
-        try:
-            process = Process(target=self.commands[command_name].execute, args=args)
-            process.start()
-            process.join()  # Wait for the process to complete
-        except KeyError:
-            print(f"No such command: {command_name}")  # Handles cases where command does not exist
+    def execute_command(self, cmd_input):
+        """Executes a registered command with arguments"""
+        parts = cmd_input.split()  # Split user input into parts
+        cmd_name = parts[0].lower()  # Command name (first word)
+        args = parts[1:]  # Remaining words as arguments
+
+        if cmd_name in self.commands:
+            try:
+                result = self.commands[cmd_name].execute(*args)  # Pass arguments
+                if result is not None:
+                    print(result)  # Print command output
+            except TypeError as e:
+                print(f"Error: Invalid arguments for '{cmd_name}' command. {e}")
+        else:
+            print(f"Error: Unknown command '{cmd_name}'.")
