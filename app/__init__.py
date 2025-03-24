@@ -7,6 +7,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from app.commands import CommandHandler
 from app.commands import Command
+from datetime import datetime
 
 class App:
     def __init__(self):  # Constructor
@@ -21,7 +22,7 @@ class App:
         self.command_handler = CommandHandler()
         logging.info("Command handler initialized.")
 
-        # Initialize an empty DataFrame for command history
+        # Initialize an empty DataFrame with proper columns
         self.command_history = pd.DataFrame(columns=["Command", "Result", "Timestamp"])
 
         # Load previous history if available
@@ -74,6 +75,21 @@ class App:
         else:
             logging.error(f"Invalid command index: {command_index}.")
 
+    def execute_command(self, cmd_input):
+        """Execute a command and update history."""
+        result = self.command_handler.execute_command(cmd_input)
+        
+        # Add command to history
+        new_entry = pd.DataFrame({
+            "Command": [cmd_input],
+            "Result": [str(result)],
+            "Timestamp": [datetime.now().strftime("%Y-%m-%d %H:%M:%S")]
+        })
+        
+        self.command_history = pd.concat([self.command_history, new_entry], ignore_index=True)
+        self.save_command_history()
+        return result
+
     def load_plugins(self):
         """Dynamically load all plugins in the 'app.plugins' directory."""
         plugins_package = 'app.plugins'
@@ -92,70 +108,38 @@ class App:
                     logging.error(f"Error importing plugin {plugin_name}: {e}")
 
     def register_plugin_commands(self, plugin_module, plugin_name):
-        """Registers plugin commands dynamically."""
-        for item_name in dir(plugin_module):
-            item = getattr(plugin_module, item_name)
-            if isinstance(item, type) and issubclass(item, Command) and item is not Command:
-                command_name = getattr(item, "name", plugin_name)  # Allow explicit command names
-                try:
-                    if command_name.lower() == "menu":  
-                        # Only pass handler if required (for MenuCommand)
-                        self.command_handler.register_command(command_name, item(self.command_handler))
-                    else:
-                        # Instantiate normally for all other commands
-                        self.command_handler.register_command(command_name, item())
-
-                    logging.info(f"Command '{command_name}' from plugin '{plugin_name}' registered.")
-                except TypeError as e:
-                    logging.error(f"Error instantiating command '{command_name}': {e}")
+        """Register commands from a plugin module."""
+        if hasattr(plugin_module, 'register'):
+            try:
+                plugin_module.register(self.command_handler)
+                logging.info(f"Successfully registered commands from plugin {plugin_name}")
+            except Exception as e:
+                logging.error(f"Error registering commands from plugin {plugin_name}: {e}")
+        else:
+            logging.warning(f"Plugin {plugin_name} has no register function")
 
     def start(self):
-        """Starts the calculator application with a REPL loop."""
+        """Start the calculator application."""
         self.load_plugins()
-        logging.info("App started. Type 'exit' to exit, 'clear_history' to clear, or 'delete_history <index>' to delete a record.")
-        try:
-            while True:
-                cmd_input = input(">>> ").strip()
-                if cmd_input.lower() == 'exit':
-                    logging.info("App exited.")
+        
+        # Display welcome message and menu
+        self.command_handler.execute_command("menu")
+        
+        while True:
+            try:
+                command = input("\nEnter command: ").strip()
+                if command.lower() == "exit":
+                    print("Goodbye!")
                     break
-                elif cmd_input.lower() == 'clear_history':
-                    self.clear_history()
-                elif cmd_input.lower().startswith('delete_history'):
-                    try:
-                        _, command_index = cmd_input.split()
-                        self.delete_history_record(int(command_index))
-                    except ValueError:
-                        logging.error("Please provide a valid index to delete.")
-                else:
-                    try:
-                        # Execute the command and capture the result
-                        result = self.command_handler.execute_command(cmd_input)
-
-                        # If the result is None, set it to 'No result'
-                        if result is None:
-                            result = 'No result'
-
-                        # Save command and result to history
-                        timestamp = pd.to_datetime('now')
-                        new_history = pd.DataFrame([{
-                            "Command": cmd_input,
-                            "Result": result,
-                            "Timestamp": timestamp
-                        }])
-
-                        # Concatenate the new history entry to the existing history
-                        self.command_history = pd.concat([self.command_history, new_history], ignore_index=True)
-
-                        # Save the history to CSV after each command execution
-                        self.save_command_history()
-
-                    except KeyError:
-                        logging.error(f"Unknown command: {cmd_input}. Try again.")
-        except KeyboardInterrupt:
-            logging.info("App interrupted and exiting gracefully.")
-        finally:
-            logging.info("App shutdown.")
+                    
+                self.execute_command(command)
+                
+            except KeyboardInterrupt:
+                print("\nGoodbye!")
+                break
+            except Exception as e:
+                logging.error(f"Unexpected error: {e}")
+                print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
     app = App()

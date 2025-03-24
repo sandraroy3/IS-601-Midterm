@@ -13,11 +13,13 @@ class SubtractCommand(Command):
             result = x - y
             # Log the result with process information
             logger.info(f"Process {current_process().name}: Command 'subtract' executed with result = {result}")
-            print(f"Process {current_process().name}: Result = {result}")  # Optionally print to the console
+            print(f"Process {current_process().name}: Result = {result}")
             return result
         except ValueError:
-            logger.error(f"Process {current_process().name}: Invalid input! Please enter numeric values.")
-            print("Invalid input! Please enter numeric values.")
+            error_msg = "Invalid input! Please enter numeric values."
+            logger.error(f"Process {current_process().name}: {error_msg}")
+            print(error_msg)
+            return error_msg
 
 def register(handler):
     """Registers the SubtractCommand dynamically."""

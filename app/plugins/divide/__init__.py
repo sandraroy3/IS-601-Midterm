@@ -27,21 +27,27 @@ class DivideCommand(Command):
             x = int(x)  # Convert input to integer
             y = int(y)  # Convert input to integer
             if y == 0:
-                raise ZeroDivisionError("Error: Division by zero is not allowed.")
+                error_msg = "Error: Division by zero is not allowed."
+                logger.error(f"Process {current_process().name}: {error_msg}")
+                print(error_msg)
+                return error_msg
 
             result = x / y
             # Log the result with process information
             logger.info(f"Process {current_process().name}: Command 'divide' executed with result = {result}")
             print(f"Process {current_process().name}: Result = {result}")
+            return result
 
         except ValueError:
             error_msg = "Invalid input! Please enter numeric values."
             logger.error(f"Process {current_process().name}: {error_msg}")
             print(error_msg)
+            return error_msg
         except ZeroDivisionError as e:
             # Log division by zero error
-            logger.error(f"Process {current_process().name}: {e}")
-            print(e)  # Display custom division by zero error message
+            logger.error(f"Process {current_process().name}: {str(e)}")
+            print(str(e))
+            return str(e)
 
 def register(handler):
     """Registers the DivideCommand dynamically with CommandHandler."""

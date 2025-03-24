@@ -1,27 +1,947 @@
-2025-03-17 00:53:34,882 - root - INFO - Logging configured.
-2025-03-17 00:53:34,882 - root - INFO - Logger successfully configured.
-2025-03-17 00:53:34,882 - root - INFO - Environment variables loaded.
-2025-03-17 00:53:34,882 - root - INFO - Command handler initialized.
-2025-03-17 00:53:34,884 - root - INFO - No previous command history found.
-2025-03-17 00:53:34,886 - root - INFO - Command 'add' from plugin 'add' registered.
-2025-03-17 00:53:34,886 - root - INFO - Command 'csv' from plugin 'csv' registered.
-2025-03-17 00:53:34,887 - root - INFO - Command 'data' from plugin 'data' registered.
-2025-03-17 00:53:34,899 - root - INFO - Command 'divide' from plugin 'divide' registered.
-2025-03-17 00:53:34,899 - root - INFO - Command 'exit' from plugin 'exit' registered.
-2025-03-17 00:53:34,900 - root - INFO - Command 'greet' from plugin 'greet' registered.
-2025-03-17 00:53:34,900 - root - INFO - Command 'menu' from plugin 'menu' registered.
-2025-03-17 00:53:34,901 - root - INFO - Command 'multiply' from plugin 'multiply' registered.
-2025-03-17 00:53:34,901 - root - INFO - Command 'subtract' from plugin 'subtract' registered.
-2025-03-17 00:53:34,901 - root - INFO - App started. Type 'exit' to exit, 'clear_history' to clear, or 'delete_history <index>' to delete a record.
-2025-03-17 00:53:56,962 - app.plugins.add - INFO - Add command executed: 8 + 9 = 17
-2025-03-17 00:53:56,984 - root - INFO - Command history saved to history/command_history.csv.
-2025-03-17 00:54:09,500 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 3
-2025-03-17 00:54:09,515 - root - INFO - Command history saved to history/command_history.csv.
-2025-03-17 00:54:15,893 - venv - INFO - Process MainProcess: Command 'add' executed with result = 480
-2025-03-17 00:54:15,908 - root - INFO - Command history saved to history/command_history.csv.
-2025-03-17 00:54:23,379 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
-2025-03-17 00:54:23,393 - root - INFO - Command history saved to history/command_history.csv.
-2025-03-17 00:54:48,608 - root - INFO - Hello world!
-2025-03-17 00:54:48,620 - root - INFO - Command history saved to history/command_history.csv.
-2025-03-17 00:54:50,961 - root - INFO - App exited.
-2025-03-17 00:54:50,963 - root - INFO - App shutdown.
+2025-03-22 13:27:49,935 - root - INFO - Logging configured.
+2025-03-22 13:27:49,935 - root - INFO - Logger successfully configured.
+2025-03-22 13:27:49,935 - root - INFO - Environment variables loaded.
+2025-03-22 13:27:49,935 - root - INFO - Command handler initialized.
+2025-03-22 13:27:49,936 - root - INFO - No previous command history found.
+2025-03-22 13:27:49,938 - root - INFO - Command 'add' from plugin 'add' registered.
+2025-03-22 13:27:49,943 - root - INFO - Command 'csv' from plugin 'csv' registered.
+2025-03-22 13:27:49,944 - root - INFO - Command 'data' from plugin 'data' registered.
+2025-03-22 13:27:49,949 - root - INFO - Command 'divide' from plugin 'divide' registered.
+2025-03-22 13:27:49,949 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2025-03-22 13:27:49,950 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2025-03-22 13:27:49,950 - root - INFO - Command 'menu' from plugin 'menu' registered.
+2025-03-22 13:27:49,951 - root - INFO - Command 'multiply' from plugin 'multiply' registered.
+2025-03-22 13:27:49,951 - root - INFO - Command 'subtract' from plugin 'subtract' registered.
+2025-03-22 13:27:49,951 - root - INFO - App started with instructions displayed.
+2025-03-22 13:27:53,379 - app.plugins.add - INFO - Add command executed: 4 + 6 = 10
+2025-03-22 13:27:53,380 - root - INFO - Command 'add 4 6' executed with result: 10
+2025-03-22 13:27:53,393 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:27:57,162 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:27:57,164 - root - INFO - Command 'divide 7 0' executed with result: Error: Division by zero is not allowed.
+2025-03-22 13:27:57,170 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:28:17,615 - root - INFO - App exited.
+2025-03-22 13:28:17,617 - root - INFO - App shutdown.
+2025-03-22 13:32:27,851 - root - INFO - Logging configured.
+2025-03-22 13:32:27,851 - root - INFO - Logger successfully configured.
+2025-03-22 13:32:27,851 - root - INFO - Environment variables loaded.
+2025-03-22 13:32:27,852 - root - INFO - Command handler initialized.
+2025-03-22 13:32:27,857 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:32:27,858 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:32:27,859 - root - INFO - Command history cleared.
+2025-03-22 13:32:27,862 - root - INFO - Logging configured.
+2025-03-22 13:32:27,862 - root - INFO - Logger successfully configured.
+2025-03-22 13:32:27,862 - root - INFO - Environment variables loaded.
+2025-03-22 13:32:27,862 - root - INFO - Command handler initialized.
+2025-03-22 13:32:27,863 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:33:25,144 - root - INFO - Logging configured.
+2025-03-22 13:33:25,144 - root - INFO - Logger successfully configured.
+2025-03-22 13:33:25,144 - root - INFO - Environment variables loaded.
+2025-03-22 13:33:25,144 - root - INFO - Command handler initialized.
+2025-03-22 13:33:25,150 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:33:25,151 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:33:25,151 - root - INFO - Command history cleared.
+2025-03-22 13:33:25,154 - root - INFO - Logging configured.
+2025-03-22 13:33:25,154 - root - INFO - Logger successfully configured.
+2025-03-22 13:33:25,154 - root - INFO - Environment variables loaded.
+2025-03-22 13:33:25,154 - root - INFO - Command handler initialized.
+2025-03-22 13:33:25,155 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:43:00,849 - root - INFO - Logging configured.
+2025-03-22 13:43:00,849 - root - INFO - Logger successfully configured.
+2025-03-22 13:43:00,850 - root - INFO - Environment variables loaded.
+2025-03-22 13:43:00,850 - root - INFO - Command handler initialized.
+2025-03-22 13:43:00,854 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:43:00,855 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:43:00,855 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:43:00,857 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:43:00,857 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:43:35,094 - root - INFO - Logging configured.
+2025-03-22 13:43:35,094 - root - INFO - Logger successfully configured.
+2025-03-22 13:43:35,095 - root - INFO - Environment variables loaded.
+2025-03-22 13:43:35,095 - root - INFO - Command handler initialized.
+2025-03-22 13:43:35,100 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:43:35,100 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:43:35,100 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:43:35,158 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:43:35,158 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:46:01,087 - root - INFO - Logging configured.
+2025-03-22 13:46:01,088 - root - INFO - Logger successfully configured.
+2025-03-22 13:46:01,088 - root - INFO - Environment variables loaded.
+2025-03-22 13:46:01,088 - root - INFO - Command handler initialized.
+2025-03-22 13:46:01,091 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:46:01,091 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:46:01,093 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:46:01,093 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:46:01,093 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:46:01,095 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:46:01,095 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:47:51,159 - root - INFO - Logging configured.
+2025-03-22 13:47:51,160 - root - INFO - Logger successfully configured.
+2025-03-22 13:47:51,160 - root - INFO - Environment variables loaded.
+2025-03-22 13:47:51,160 - root - INFO - Command handler initialized.
+2025-03-22 13:47:51,163 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:47:51,165 - root - INFO - Logging configured.
+2025-03-22 13:47:51,165 - root - INFO - Logger successfully configured.
+2025-03-22 13:47:51,165 - root - INFO - Environment variables loaded.
+2025-03-22 13:47:51,165 - root - INFO - Command handler initialized.
+2025-03-22 13:47:51,165 - root - INFO - No previous command history found.
+2025-03-22 13:47:51,165 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:47:51,167 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,168 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,168 - root - INFO - Command history cleared.
+2025-03-22 13:47:51,168 - root - INFO - Logging configured.
+2025-03-22 13:47:51,168 - root - INFO - Logger successfully configured.
+2025-03-22 13:47:51,169 - root - INFO - Environment variables loaded.
+2025-03-22 13:47:51,169 - root - INFO - Command handler initialized.
+2025-03-22 13:47:51,169 - root - INFO - No previous command history found.
+2025-03-22 13:47:51,169 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:47:51,169 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,170 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:47:51,170 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,171 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,171 - root - INFO - Deleted command at index 0.
+2025-03-22 13:47:51,173 - root - INFO - Logging configured.
+2025-03-22 13:47:51,173 - root - INFO - Logger successfully configured.
+2025-03-22 13:47:51,173 - root - INFO - Environment variables loaded.
+2025-03-22 13:47:51,173 - root - INFO - Command handler initialized.
+2025-03-22 13:47:51,173 - root - INFO - No previous command history found.
+2025-03-22 13:47:51,173 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:47:51,174 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,174 - root - INFO - Logging configured.
+2025-03-22 13:47:51,174 - root - INFO - Logger successfully configured.
+2025-03-22 13:47:51,174 - root - INFO - Environment variables loaded.
+2025-03-22 13:47:51,174 - root - INFO - Command handler initialized.
+2025-03-22 13:47:51,175 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:47:51,176 - root - INFO - Logging configured.
+2025-03-22 13:47:51,176 - root - INFO - Logger successfully configured.
+2025-03-22 13:47:51,176 - root - INFO - Environment variables loaded.
+2025-03-22 13:47:51,176 - root - INFO - Command handler initialized.
+2025-03-22 13:47:51,176 - root - INFO - No previous command history found.
+2025-03-22 13:47:51,177 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:47:51,177 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:47:51,178 - root - WARNING - Plugin data has no register function
+2025-03-22 13:47:51,178 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:47:51,178 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:47:51,178 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:47:51,178 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:47:51,178 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:47:51,178 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:47:51,179 - root - INFO - Logging configured.
+2025-03-22 13:47:51,179 - root - INFO - Logger successfully configured.
+2025-03-22 13:47:51,179 - root - INFO - Environment variables loaded.
+2025-03-22 13:47:51,179 - root - INFO - Command handler initialized.
+2025-03-22 13:47:51,180 - root - INFO - No previous command history found.
+2025-03-22 13:47:51,180 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:47:51,180 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,181 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:47:51,181 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:47:51,182 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:47:51,182 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:47:51,182 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:47:51,183 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:47:51,183 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:47:51,183 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:47:51,183 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:47:51,183 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:47:51,183 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:47:51,184 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:47:51,184 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:47:51,184 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:47:51,184 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:47:51,184 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:47:51,184 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:47:51,184 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:47:51,185 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:47:51,186 - root - INFO - Logging configured.
+2025-03-22 13:47:51,186 - root - INFO - Logger successfully configured.
+2025-03-22 13:47:51,186 - root - INFO - Environment variables loaded.
+2025-03-22 13:47:51,186 - root - INFO - Command handler initialized.
+2025-03-22 13:47:51,186 - root - INFO - No previous command history found.
+2025-03-22 13:47:51,186 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:47:51,187 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,187 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:47:51,187 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:47:51,188 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:47:51,188 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:48:09,529 - root - INFO - Logging configured.
+2025-03-22 13:48:09,530 - root - INFO - Logger successfully configured.
+2025-03-22 13:48:09,530 - root - INFO - Environment variables loaded.
+2025-03-22 13:48:09,530 - root - INFO - Command handler initialized.
+2025-03-22 13:48:09,534 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:48:09,534 - root - INFO - Logging configured.
+2025-03-22 13:48:09,534 - root - INFO - Logger successfully configured.
+2025-03-22 13:48:09,535 - root - INFO - Environment variables loaded.
+2025-03-22 13:48:09,535 - root - INFO - Command handler initialized.
+2025-03-22 13:48:09,535 - root - INFO - No previous command history found.
+2025-03-22 13:48:09,535 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:48:09,536 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,537 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,537 - root - INFO - Command history cleared.
+2025-03-22 13:48:09,537 - root - INFO - Logging configured.
+2025-03-22 13:48:09,538 - root - INFO - Logger successfully configured.
+2025-03-22 13:48:09,538 - root - INFO - Environment variables loaded.
+2025-03-22 13:48:09,538 - root - INFO - Command handler initialized.
+2025-03-22 13:48:09,538 - root - INFO - No previous command history found.
+2025-03-22 13:48:09,538 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:48:09,538 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,539 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:48:09,539 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,541 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,541 - root - INFO - Deleted command at index 0.
+2025-03-22 13:48:09,543 - root - INFO - Logging configured.
+2025-03-22 13:48:09,543 - root - INFO - Logger successfully configured.
+2025-03-22 13:48:09,543 - root - INFO - Environment variables loaded.
+2025-03-22 13:48:09,543 - root - INFO - Command handler initialized.
+2025-03-22 13:48:09,543 - root - INFO - No previous command history found.
+2025-03-22 13:48:09,543 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:48:09,543 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,544 - root - INFO - Logging configured.
+2025-03-22 13:48:09,544 - root - INFO - Logger successfully configured.
+2025-03-22 13:48:09,544 - root - INFO - Environment variables loaded.
+2025-03-22 13:48:09,544 - root - INFO - Command handler initialized.
+2025-03-22 13:48:09,545 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:48:09,545 - root - INFO - Logging configured.
+2025-03-22 13:48:09,546 - root - INFO - Logger successfully configured.
+2025-03-22 13:48:09,546 - root - INFO - Environment variables loaded.
+2025-03-22 13:48:09,546 - root - INFO - Command handler initialized.
+2025-03-22 13:48:09,546 - root - INFO - No previous command history found.
+2025-03-22 13:48:09,546 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:48:09,547 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:48:09,547 - root - WARNING - Plugin data has no register function
+2025-03-22 13:48:09,547 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:48:09,547 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:48:09,547 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:48:09,547 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:48:09,548 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:48:09,548 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:48:09,549 - root - INFO - Logging configured.
+2025-03-22 13:48:09,549 - root - INFO - Logger successfully configured.
+2025-03-22 13:48:09,549 - root - INFO - Environment variables loaded.
+2025-03-22 13:48:09,549 - root - INFO - Command handler initialized.
+2025-03-22 13:48:09,549 - root - INFO - No previous command history found.
+2025-03-22 13:48:09,549 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:48:09,550 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,551 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:48:09,551 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:48:09,551 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:48:09,552 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:48:09,552 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:48:09,553 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:48:09,553 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:48:09,553 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:48:09,553 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:48:09,553 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:48:09,553 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:48:09,554 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:48:09,554 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:48:09,554 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:48:09,554 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:48:09,554 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:48:09,554 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:48:09,554 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:48:09,555 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:48:09,556 - root - INFO - Logging configured.
+2025-03-22 13:48:09,556 - root - INFO - Logger successfully configured.
+2025-03-22 13:48:09,556 - root - INFO - Environment variables loaded.
+2025-03-22 13:48:09,556 - root - INFO - Command handler initialized.
+2025-03-22 13:48:09,556 - root - INFO - No previous command history found.
+2025-03-22 13:48:09,556 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:48:09,557 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,557 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:48:09,557 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:48:09,558 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:48:09,558 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:50:57,097 - root - INFO - Logging configured.
+2025-03-22 13:50:57,097 - root - INFO - Logger successfully configured.
+2025-03-22 13:50:57,098 - root - INFO - Environment variables loaded.
+2025-03-22 13:50:57,098 - root - INFO - Command handler initialized.
+2025-03-22 13:50:57,103 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:50:57,104 - root - INFO - Logging configured.
+2025-03-22 13:50:57,104 - root - INFO - Logger successfully configured.
+2025-03-22 13:50:57,104 - root - INFO - Environment variables loaded.
+2025-03-22 13:50:57,104 - root - INFO - Command handler initialized.
+2025-03-22 13:50:57,104 - root - INFO - No previous command history found.
+2025-03-22 13:50:57,104 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:50:57,106 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,106 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,106 - root - INFO - Command history cleared.
+2025-03-22 13:50:57,107 - root - INFO - Logging configured.
+2025-03-22 13:50:57,107 - root - INFO - Logger successfully configured.
+2025-03-22 13:50:57,107 - root - INFO - Environment variables loaded.
+2025-03-22 13:50:57,107 - root - INFO - Command handler initialized.
+2025-03-22 13:50:57,107 - root - INFO - No previous command history found.
+2025-03-22 13:50:57,108 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:50:57,108 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,108 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:50:57,108 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,110 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,110 - root - INFO - Deleted command at index 0.
+2025-03-22 13:50:57,112 - root - INFO - Logging configured.
+2025-03-22 13:50:57,112 - root - INFO - Logger successfully configured.
+2025-03-22 13:50:57,112 - root - INFO - Environment variables loaded.
+2025-03-22 13:50:57,112 - root - INFO - Command handler initialized.
+2025-03-22 13:50:57,112 - root - INFO - No previous command history found.
+2025-03-22 13:50:57,119 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:50:57,120 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,121 - root - INFO - Logging configured.
+2025-03-22 13:50:57,121 - root - INFO - Logger successfully configured.
+2025-03-22 13:50:57,121 - root - INFO - Environment variables loaded.
+2025-03-22 13:50:57,121 - root - INFO - Command handler initialized.
+2025-03-22 13:50:57,122 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:50:57,123 - root - INFO - Logging configured.
+2025-03-22 13:50:57,123 - root - INFO - Logger successfully configured.
+2025-03-22 13:50:57,123 - root - INFO - Environment variables loaded.
+2025-03-22 13:50:57,123 - root - INFO - Command handler initialized.
+2025-03-22 13:50:57,123 - root - INFO - No previous command history found.
+2025-03-22 13:50:57,123 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:50:57,124 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:50:57,124 - root - WARNING - Plugin data has no register function
+2025-03-22 13:50:57,124 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:50:57,125 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:50:57,125 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:50:57,125 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:50:57,125 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:50:57,125 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:50:57,126 - root - INFO - Logging configured.
+2025-03-22 13:50:57,126 - root - INFO - Logger successfully configured.
+2025-03-22 13:50:57,126 - root - INFO - Environment variables loaded.
+2025-03-22 13:50:57,126 - root - INFO - Command handler initialized.
+2025-03-22 13:50:57,126 - root - INFO - No previous command history found.
+2025-03-22 13:50:57,126 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:50:57,127 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,128 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:50:57,128 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:50:57,130 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:50:57,132 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:50:57,133 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:50:57,135 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:50:57,135 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:50:57,135 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:50:57,135 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:50:57,135 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:50:57,135 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:50:57,136 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:50:57,136 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:50:57,136 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:50:57,136 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:50:57,137 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:50:57,137 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:50:57,137 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:50:57,137 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:50:57,138 - root - INFO - Logging configured.
+2025-03-22 13:50:57,138 - root - INFO - Logger successfully configured.
+2025-03-22 13:50:57,139 - root - INFO - Environment variables loaded.
+2025-03-22 13:50:57,139 - root - INFO - Command handler initialized.
+2025-03-22 13:50:57,139 - root - INFO - No previous command history found.
+2025-03-22 13:50:57,139 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:50:57,140 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,140 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:50:57,140 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:50:57,141 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:50:57,141 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:51:20,245 - root - INFO - Logging configured.
+2025-03-22 13:51:20,246 - root - INFO - Logger successfully configured.
+2025-03-22 13:51:20,246 - root - INFO - Environment variables loaded.
+2025-03-22 13:51:20,246 - root - INFO - Command handler initialized.
+2025-03-22 13:51:20,250 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:51:20,251 - root - INFO - Logging configured.
+2025-03-22 13:51:20,251 - root - INFO - Logger successfully configured.
+2025-03-22 13:51:20,252 - root - INFO - Environment variables loaded.
+2025-03-22 13:51:20,252 - root - INFO - Command handler initialized.
+2025-03-22 13:51:20,252 - root - INFO - No previous command history found.
+2025-03-22 13:51:20,252 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:51:20,254 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,254 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,254 - root - INFO - Command history cleared.
+2025-03-22 13:51:20,255 - root - INFO - Logging configured.
+2025-03-22 13:51:20,255 - root - INFO - Logger successfully configured.
+2025-03-22 13:51:20,255 - root - INFO - Environment variables loaded.
+2025-03-22 13:51:20,255 - root - INFO - Command handler initialized.
+2025-03-22 13:51:20,255 - root - INFO - No previous command history found.
+2025-03-22 13:51:20,255 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:51:20,256 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,256 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:51:20,257 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,258 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,258 - root - INFO - Deleted command at index 0.
+2025-03-22 13:51:20,261 - root - INFO - Logging configured.
+2025-03-22 13:51:20,261 - root - INFO - Logger successfully configured.
+2025-03-22 13:51:20,261 - root - INFO - Environment variables loaded.
+2025-03-22 13:51:20,261 - root - INFO - Command handler initialized.
+2025-03-22 13:51:20,262 - root - INFO - No previous command history found.
+2025-03-22 13:51:20,262 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:51:20,262 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,263 - root - INFO - Logging configured.
+2025-03-22 13:51:20,263 - root - INFO - Logger successfully configured.
+2025-03-22 13:51:20,263 - root - INFO - Environment variables loaded.
+2025-03-22 13:51:20,263 - root - INFO - Command handler initialized.
+2025-03-22 13:51:20,264 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:51:20,264 - root - INFO - Logging configured.
+2025-03-22 13:51:20,265 - root - INFO - Logger successfully configured.
+2025-03-22 13:51:20,265 - root - INFO - Environment variables loaded.
+2025-03-22 13:51:20,265 - root - INFO - Command handler initialized.
+2025-03-22 13:51:20,265 - root - INFO - No previous command history found.
+2025-03-22 13:51:20,266 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:51:20,267 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:51:20,267 - root - WARNING - Plugin data has no register function
+2025-03-22 13:51:20,267 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:51:20,268 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:51:20,268 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:51:20,268 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:51:20,268 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:51:20,268 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:51:20,269 - root - INFO - Logging configured.
+2025-03-22 13:51:20,269 - root - INFO - Logger successfully configured.
+2025-03-22 13:51:20,269 - root - INFO - Environment variables loaded.
+2025-03-22 13:51:20,269 - root - INFO - Command handler initialized.
+2025-03-22 13:51:20,269 - root - INFO - No previous command history found.
+2025-03-22 13:51:20,269 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:51:20,270 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,271 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:51:20,271 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:51:20,271 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:51:20,272 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:51:20,272 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:51:20,273 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:51:20,273 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:51:20,273 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:51:20,273 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:51:20,273 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:51:20,273 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:51:20,274 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:51:20,274 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:51:20,274 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:51:20,274 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:51:20,274 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:51:20,274 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:51:20,274 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:51:20,275 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:51:20,276 - root - INFO - Logging configured.
+2025-03-22 13:51:20,276 - root - INFO - Logger successfully configured.
+2025-03-22 13:51:20,276 - root - INFO - Environment variables loaded.
+2025-03-22 13:51:20,276 - root - INFO - Command handler initialized.
+2025-03-22 13:51:20,276 - root - INFO - No previous command history found.
+2025-03-22 13:51:20,276 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:51:20,277 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,277 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:51:20,277 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:51:20,278 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:51:20,278 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:53:55,604 - root - INFO - Logging configured.
+2025-03-22 13:53:55,604 - root - INFO - Logger successfully configured.
+2025-03-22 13:53:55,604 - root - INFO - Environment variables loaded.
+2025-03-22 13:53:55,604 - root - INFO - Command handler initialized.
+2025-03-22 13:53:55,608 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:53:55,608 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:53:55,609 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:53:55,609 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:53:55,610 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:53:55,611 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:53:55,612 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:56:24,062 - root - INFO - Logging configured.
+2025-03-22 13:56:24,063 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:24,063 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:24,063 - root - INFO - Command handler initialized.
+2025-03-22 13:56:24,067 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:56:24,068 - root - INFO - Logging configured.
+2025-03-22 13:56:24,068 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:24,068 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:24,068 - root - INFO - Command handler initialized.
+2025-03-22 13:56:24,068 - root - INFO - No previous command history found.
+2025-03-22 13:56:24,069 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:24,070 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,071 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,071 - root - INFO - Command history cleared.
+2025-03-22 13:56:24,071 - root - INFO - Logging configured.
+2025-03-22 13:56:24,071 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:24,072 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:24,072 - root - INFO - Command handler initialized.
+2025-03-22 13:56:24,072 - root - INFO - No previous command history found.
+2025-03-22 13:56:24,072 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:24,072 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,072 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:56:24,073 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,074 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,074 - root - INFO - Deleted command at index 0.
+2025-03-22 13:56:24,076 - root - INFO - Logging configured.
+2025-03-22 13:56:24,076 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:24,077 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:24,077 - root - INFO - Command handler initialized.
+2025-03-22 13:56:24,077 - root - INFO - No previous command history found.
+2025-03-22 13:56:24,077 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:24,077 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,078 - root - INFO - Logging configured.
+2025-03-22 13:56:24,078 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:24,078 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:24,078 - root - INFO - Command handler initialized.
+2025-03-22 13:56:24,079 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:56:24,080 - root - INFO - Logging configured.
+2025-03-22 13:56:24,080 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:24,080 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:24,080 - root - INFO - Command handler initialized.
+2025-03-22 13:56:24,080 - root - INFO - No previous command history found.
+2025-03-22 13:56:24,080 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:56:24,081 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:56:24,082 - root - WARNING - Plugin data has no register function
+2025-03-22 13:56:24,082 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:56:24,083 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:56:24,083 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:56:24,083 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:56:24,083 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:56:24,083 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:56:24,084 - root - INFO - Logging configured.
+2025-03-22 13:56:24,084 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:24,084 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:24,084 - root - INFO - Command handler initialized.
+2025-03-22 13:56:24,084 - root - INFO - No previous command history found.
+2025-03-22 13:56:24,084 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:24,085 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,086 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:56:24,086 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:56:24,087 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:24,087 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:56:24,088 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:56:24,088 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:56:24,088 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:56:24,088 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:56:24,089 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:56:24,089 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:56:24,089 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:56:24,089 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:56:24,089 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:56:24,089 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:56:24,090 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:56:24,090 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:56:24,090 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:56:24,090 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:56:24,090 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:56:24,092 - root - INFO - Logging configured.
+2025-03-22 13:56:24,092 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:24,092 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:24,092 - root - INFO - Command handler initialized.
+2025-03-22 13:56:24,093 - root - INFO - No previous command history found.
+2025-03-22 13:56:24,093 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:24,093 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,093 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:56:24,094 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:24,094 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:56:24,094 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:56:34,900 - root - INFO - Logging configured.
+2025-03-22 13:56:34,900 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:34,901 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:34,901 - root - INFO - Command handler initialized.
+2025-03-22 13:56:34,906 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:56:34,907 - root - INFO - Logging configured.
+2025-03-22 13:56:34,907 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:34,907 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:34,907 - root - INFO - Command handler initialized.
+2025-03-22 13:56:34,908 - root - INFO - No previous command history found.
+2025-03-22 13:56:34,908 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:34,910 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,910 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,910 - root - INFO - Command history cleared.
+2025-03-22 13:56:34,911 - root - INFO - Logging configured.
+2025-03-22 13:56:34,911 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:34,911 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:34,911 - root - INFO - Command handler initialized.
+2025-03-22 13:56:34,912 - root - INFO - No previous command history found.
+2025-03-22 13:56:34,912 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:34,912 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,912 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:56:34,912 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,914 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,914 - root - INFO - Deleted command at index 0.
+2025-03-22 13:56:34,917 - root - INFO - Logging configured.
+2025-03-22 13:56:34,917 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:34,917 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:34,918 - root - INFO - Command handler initialized.
+2025-03-22 13:56:34,918 - root - INFO - No previous command history found.
+2025-03-22 13:56:34,918 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:34,919 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,919 - root - INFO - Logging configured.
+2025-03-22 13:56:34,919 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:34,919 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:34,919 - root - INFO - Command handler initialized.
+2025-03-22 13:56:34,920 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:56:34,921 - root - INFO - Logging configured.
+2025-03-22 13:56:34,921 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:34,921 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:34,921 - root - INFO - Command handler initialized.
+2025-03-22 13:56:34,921 - root - INFO - No previous command history found.
+2025-03-22 13:56:34,921 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:56:34,922 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:56:34,923 - root - WARNING - Plugin data has no register function
+2025-03-22 13:56:34,923 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:56:34,923 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:56:34,923 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:56:34,923 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:56:34,923 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:56:34,923 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:56:34,924 - root - INFO - Logging configured.
+2025-03-22 13:56:34,924 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:34,924 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:34,924 - root - INFO - Command handler initialized.
+2025-03-22 13:56:34,925 - root - INFO - No previous command history found.
+2025-03-22 13:56:34,925 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:34,925 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,926 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:56:34,926 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:56:34,927 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:34,927 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:56:34,927 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:56:34,928 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:56:34,928 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:56:34,928 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:56:34,928 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:56:34,928 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:56:34,928 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:56:34,928 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:56:34,928 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:56:34,928 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:56:34,929 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:56:34,929 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:56:34,929 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:56:34,929 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:56:34,929 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:56:34,931 - root - INFO - Logging configured.
+2025-03-22 13:56:34,931 - root - INFO - Logger successfully configured.
+2025-03-22 13:56:34,931 - root - INFO - Environment variables loaded.
+2025-03-22 13:56:34,931 - root - INFO - Command handler initialized.
+2025-03-22 13:56:34,931 - root - INFO - No previous command history found.
+2025-03-22 13:56:34,931 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:56:34,932 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,932 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:56:34,932 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:56:34,933 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:56:34,933 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:58:41,408 - root - INFO - Logging configured.
+2025-03-22 13:58:41,408 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:41,409 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:41,409 - root - INFO - Command handler initialized.
+2025-03-22 13:58:41,413 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:58:41,413 - root - INFO - Logging configured.
+2025-03-22 13:58:41,413 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:41,414 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:41,414 - root - INFO - Command handler initialized.
+2025-03-22 13:58:41,414 - root - INFO - No previous command history found.
+2025-03-22 13:58:41,414 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:41,416 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,416 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,416 - root - INFO - Command history cleared.
+2025-03-22 13:58:41,417 - root - INFO - Logging configured.
+2025-03-22 13:58:41,417 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:41,417 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:41,417 - root - INFO - Command handler initialized.
+2025-03-22 13:58:41,418 - root - INFO - No previous command history found.
+2025-03-22 13:58:41,418 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:41,418 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,418 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:58:41,419 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,420 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,420 - root - INFO - Deleted command at index 0.
+2025-03-22 13:58:41,422 - root - INFO - Logging configured.
+2025-03-22 13:58:41,422 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:41,423 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:41,423 - root - INFO - Command handler initialized.
+2025-03-22 13:58:41,423 - root - INFO - No previous command history found.
+2025-03-22 13:58:41,423 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:41,423 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,424 - root - INFO - Logging configured.
+2025-03-22 13:58:41,424 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:41,424 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:41,424 - root - INFO - Command handler initialized.
+2025-03-22 13:58:41,425 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:58:41,425 - root - INFO - Logging configured.
+2025-03-22 13:58:41,425 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:41,426 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:41,426 - root - INFO - Command handler initialized.
+2025-03-22 13:58:41,426 - root - INFO - No previous command history found.
+2025-03-22 13:58:41,426 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:58:41,427 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:58:41,427 - root - WARNING - Plugin data has no register function
+2025-03-22 13:58:41,427 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:58:41,428 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:58:41,428 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:58:41,428 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:58:41,428 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:58:41,428 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:58:41,429 - root - INFO - Logging configured.
+2025-03-22 13:58:41,429 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:41,429 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:41,429 - root - INFO - Command handler initialized.
+2025-03-22 13:58:41,429 - root - INFO - No previous command history found.
+2025-03-22 13:58:41,429 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:41,430 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,430 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:58:41,431 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:41,431 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:41,431 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:58:41,432 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:58:41,432 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:58:41,432 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:58:41,432 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:58:41,432 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:58:41,433 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:58:41,433 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:41,433 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:58:41,433 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:58:41,433 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:41,434 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:58:41,434 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:58:41,434 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:41,434 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:41,434 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:58:41,436 - root - INFO - Logging configured.
+2025-03-22 13:58:41,436 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:41,436 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:41,436 - root - INFO - Command handler initialized.
+2025-03-22 13:58:41,436 - root - INFO - No previous command history found.
+2025-03-22 13:58:41,436 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:41,437 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,437 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:41,437 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:41,437 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:41,438 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:58:47,221 - root - INFO - Logging configured.
+2025-03-22 13:58:47,221 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:47,221 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:47,221 - root - INFO - Command handler initialized.
+2025-03-22 13:58:47,223 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:58:47,224 - root - INFO - Logging configured.
+2025-03-22 13:58:47,224 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:47,224 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:47,224 - root - INFO - Command handler initialized.
+2025-03-22 13:58:47,225 - root - INFO - No previous command history found.
+2025-03-22 13:58:47,225 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:47,226 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,226 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,226 - root - INFO - Command history cleared.
+2025-03-22 13:58:47,227 - root - INFO - Logging configured.
+2025-03-22 13:58:47,227 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:47,227 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:47,227 - root - INFO - Command handler initialized.
+2025-03-22 13:58:47,227 - root - INFO - No previous command history found.
+2025-03-22 13:58:47,228 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:47,228 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,228 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:58:47,229 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,230 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,230 - root - INFO - Deleted command at index 0.
+2025-03-22 13:58:47,231 - root - INFO - Logging configured.
+2025-03-22 13:58:47,231 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:47,231 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:47,231 - root - INFO - Command handler initialized.
+2025-03-22 13:58:47,231 - root - INFO - No previous command history found.
+2025-03-22 13:58:47,231 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:47,232 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,232 - root - INFO - Logging configured.
+2025-03-22 13:58:47,232 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:47,232 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:47,232 - root - INFO - Command handler initialized.
+2025-03-22 13:58:47,233 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:58:47,234 - root - INFO - Logging configured.
+2025-03-22 13:58:47,234 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:47,234 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:47,234 - root - INFO - Command handler initialized.
+2025-03-22 13:58:47,234 - root - INFO - No previous command history found.
+2025-03-22 13:58:47,235 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:58:47,235 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:58:47,235 - root - WARNING - Plugin data has no register function
+2025-03-22 13:58:47,235 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:58:47,236 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:58:47,236 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:58:47,236 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:58:47,236 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:58:47,236 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:58:47,237 - root - INFO - Logging configured.
+2025-03-22 13:58:47,237 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:47,237 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:47,237 - root - INFO - Command handler initialized.
+2025-03-22 13:58:47,237 - root - INFO - No previous command history found.
+2025-03-22 13:58:47,237 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:47,238 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,238 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:58:47,238 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:47,239 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:47,239 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:58:47,239 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:58:47,240 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:58:47,240 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:58:47,240 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:58:47,240 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:58:47,240 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:58:47,240 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:47,241 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:58:47,241 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:58:47,241 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:47,241 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:58:47,241 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:58:47,241 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:47,241 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:47,242 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:58:47,243 - root - INFO - Logging configured.
+2025-03-22 13:58:47,243 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:47,243 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:47,243 - root - INFO - Command handler initialized.
+2025-03-22 13:58:47,243 - root - INFO - No previous command history found.
+2025-03-22 13:58:47,243 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:47,244 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,244 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:47,244 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:47,244 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:47,245 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:58:53,247 - root - INFO - Logging configured.
+2025-03-22 13:58:53,247 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:53,247 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:53,247 - root - INFO - Command handler initialized.
+2025-03-22 13:58:53,251 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:58:53,252 - root - INFO - Logging configured.
+2025-03-22 13:58:53,252 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:53,252 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:53,252 - root - INFO - Command handler initialized.
+2025-03-22 13:58:53,253 - root - INFO - No previous command history found.
+2025-03-22 13:58:53,253 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:53,255 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,255 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,255 - root - INFO - Command history cleared.
+2025-03-22 13:58:53,257 - root - INFO - Logging configured.
+2025-03-22 13:58:53,257 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:53,257 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:53,257 - root - INFO - Command handler initialized.
+2025-03-22 13:58:53,257 - root - INFO - No previous command history found.
+2025-03-22 13:58:53,258 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:53,258 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,258 - app.plugins.add - INFO - Add command executed: 2 + 4 = 6
+2025-03-22 13:58:53,259 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,260 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,260 - root - INFO - Deleted command at index 0.
+2025-03-22 13:58:53,262 - root - INFO - Logging configured.
+2025-03-22 13:58:53,262 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:53,262 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:53,262 - root - INFO - Command handler initialized.
+2025-03-22 13:58:53,263 - root - INFO - No previous command history found.
+2025-03-22 13:58:53,263 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:53,264 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,264 - root - INFO - Logging configured.
+2025-03-22 13:58:53,264 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:53,265 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:53,265 - root - INFO - Command handler initialized.
+2025-03-22 13:58:53,266 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-22 13:58:53,268 - root - INFO - Logging configured.
+2025-03-22 13:58:53,268 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:53,268 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:53,268 - root - INFO - Command handler initialized.
+2025-03-22 13:58:53,268 - root - INFO - No previous command history found.
+2025-03-22 13:58:53,269 - root - INFO - Successfully registered commands from plugin add
+2025-03-22 13:58:53,270 - root - WARNING - Plugin csv has no register function
+2025-03-22 13:58:53,271 - root - WARNING - Plugin data has no register function
+2025-03-22 13:58:53,272 - root - INFO - Successfully registered commands from plugin divide
+2025-03-22 13:58:53,272 - root - WARNING - Plugin exit has no register function
+2025-03-22 13:58:53,273 - root - INFO - Successfully registered commands from plugin greet
+2025-03-22 13:58:53,273 - root - INFO - Successfully registered commands from plugin menu
+2025-03-22 13:58:53,273 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-22 13:58:53,273 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-22 13:58:53,274 - root - INFO - Logging configured.
+2025-03-22 13:58:53,274 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:53,274 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:53,274 - root - INFO - Command handler initialized.
+2025-03-22 13:58:53,275 - root - INFO - No previous command history found.
+2025-03-22 13:58:53,275 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:53,276 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,277 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:58:53,278 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:53,278 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:53,279 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 12
+2025-03-22 13:58:53,279 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 5
+2025-03-22 13:58:53,281 - app.plugins.add - INFO - Add command executed: 5 + 5 = 10
+2025-03-22 13:58:53,281 - app.plugins.add - INFO - Add command executed: -1 + 1 = 0
+2025-03-22 13:58:53,281 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-22 13:58:53,282 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = 2
+2025-03-22 13:58:53,282 - venv - INFO - Process MainProcess: Command 'subtract' executed with result = -5
+2025-03-22 13:58:53,282 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:53,282 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = 15
+2025-03-22 13:58:53,283 - venv - INFO - Process MainProcess: Command 'multiply' executed with result = -6
+2025-03-22 13:58:53,283 - venv - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:53,283 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = 5.0
+2025-03-22 13:58:53,283 - calc_logger - INFO - Process MainProcess: Command 'divide' executed with result = -3.0
+2025-03-22 13:58:53,284 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:53,284 - calc_logger - ERROR - Process MainProcess: Invalid input! Please enter numeric values.
+2025-03-22 13:58:53,284 - root - INFO - Process MainProcess: Hello, World!
+2025-03-22 13:58:53,286 - root - INFO - Logging configured.
+2025-03-22 13:58:53,286 - root - INFO - Logger successfully configured.
+2025-03-22 13:58:53,287 - root - INFO - Environment variables loaded.
+2025-03-22 13:58:53,287 - root - INFO - Command handler initialized.
+2025-03-22 13:58:53,287 - root - INFO - No previous command history found.
+2025-03-22 13:58:53,287 - app.plugins.add - INFO - Add command executed: 5 + 3 = 8
+2025-03-22 13:58:53,288 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,288 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:53,289 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-22 13:58:53,290 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-22 13:58:53,290 - app.plugins.add - ERROR - Invalid input for add command: invalid literal for int() with base 10: 'abc'
+2025-03-23 22:25:06,463 - root - INFO - Logging configured.
+2025-03-23 22:25:06,463 - root - INFO - Logger successfully configured.
+2025-03-23 22:25:06,464 - root - INFO - Environment variables loaded.
+2025-03-23 22:25:06,464 - root - INFO - Command handler initialized.
+2025-03-23 22:25:06,475 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-23 22:25:06,478 - root - INFO - Successfully registered commands from plugin add
+2025-03-23 22:25:06,478 - root - WARNING - Plugin csv has no register function
+2025-03-23 22:25:06,479 - root - WARNING - Plugin data has no register function
+2025-03-23 22:25:06,480 - root - INFO - Successfully registered commands from plugin divide
+2025-03-23 22:25:06,480 - root - WARNING - Plugin exit has no register function
+2025-03-23 22:25:06,481 - root - INFO - Successfully registered commands from plugin greet
+2025-03-23 22:25:06,481 - root - INFO - Successfully registered commands from plugin menu
+2025-03-23 22:25:06,483 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-23 22:25:06,483 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-23 22:25:11,958 - app.plugins.add - INFO - Add command executed: 7 + 8 = 15
+2025-03-23 22:25:11,974 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-23 22:28:17,270 - calc_logger - ERROR - Process MainProcess: Error: Division by zero is not allowed.
+2025-03-23 22:28:17,322 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-23 22:28:42,827 - root - INFO - Logging configured.
+2025-03-23 22:28:42,827 - root - INFO - Logger successfully configured.
+2025-03-23 22:28:42,827 - root - INFO - Environment variables loaded.
+2025-03-23 22:28:42,827 - root - INFO - Command handler initialized.
+2025-03-23 22:28:42,838 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-23 22:28:42,840 - root - INFO - Successfully registered commands from plugin add
+2025-03-23 22:28:42,840 - root - WARNING - Plugin csv has no register function
+2025-03-23 22:28:42,841 - root - WARNING - Plugin data has no register function
+2025-03-23 22:28:42,841 - root - INFO - Successfully registered commands from plugin divide
+2025-03-23 22:28:42,842 - root - WARNING - Plugin exit has no register function
+2025-03-23 22:28:42,842 - root - INFO - Successfully registered commands from plugin greet
+2025-03-23 22:28:42,842 - root - INFO - Successfully registered commands from plugin menu
+2025-03-23 22:28:42,843 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-23 22:28:42,843 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-23 22:28:47,704 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-23 22:28:53,126 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-23 22:32:25,295 - root - INFO - Logging configured.
+2025-03-23 22:32:25,295 - root - INFO - Logger successfully configured.
+2025-03-23 22:32:25,296 - root - INFO - Environment variables loaded.
+2025-03-23 22:32:25,296 - root - INFO - Command handler initialized.
+2025-03-23 22:32:25,307 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-23 22:32:25,308 - root - INFO - Successfully registered commands from plugin add
+2025-03-23 22:32:25,308 - root - WARNING - Plugin csv has no register function
+2025-03-23 22:32:25,309 - root - WARNING - Plugin data has no register function
+2025-03-23 22:32:25,309 - root - INFO - Successfully registered commands from plugin divide
+2025-03-23 22:32:25,310 - root - WARNING - Plugin exit has no register function
+2025-03-23 22:32:25,310 - root - INFO - Successfully registered commands from plugin greet
+2025-03-23 22:32:25,310 - root - INFO - Successfully registered commands from plugin menu
+2025-03-23 22:32:25,311 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-23 22:32:25,311 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-23 22:32:29,635 - app.plugins.add - INFO - Add command executed: 4 + 5 = 9
+2025-03-23 22:32:29,653 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-23 22:33:03,818 - root - INFO - Process MainProcess: Hello, World!
+2025-03-23 22:33:03,845 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-23 22:37:19,804 - root - INFO - Logging configured.
+2025-03-23 22:37:19,805 - root - INFO - Logger successfully configured.
+2025-03-23 22:37:19,805 - root - INFO - Environment variables loaded.
+2025-03-23 22:37:19,805 - root - INFO - Command handler initialized.
+2025-03-23 22:37:19,814 - root - INFO - Loaded command history from history/command_history.csv.
+2025-03-23 22:37:19,816 - root - INFO - Successfully registered commands from plugin add
+2025-03-23 22:37:19,817 - root - WARNING - Plugin csv has no register function
+2025-03-23 22:37:19,817 - root - WARNING - Plugin data has no register function
+2025-03-23 22:37:19,818 - root - INFO - Successfully registered commands from plugin divide
+2025-03-23 22:37:19,818 - root - WARNING - Plugin exit has no register function
+2025-03-23 22:37:19,819 - root - INFO - Successfully registered commands from plugin greet
+2025-03-23 22:37:19,819 - root - INFO - Successfully registered commands from plugin menu
+2025-03-23 22:37:19,820 - root - INFO - Successfully registered commands from plugin multiply
+2025-03-23 22:37:19,820 - root - INFO - Successfully registered commands from plugin subtract
+2025-03-23 22:37:23,750 - root - INFO - Command history saved to history/command_history.csv.
+2025-03-23 22:38:07,176 - root - INFO - Command history saved to history/command_history.csv.
