@@ -78,9 +78,15 @@ class TestApp:
         assert len(self.app.command_history) == 1
 
         # Clear history
-        self.app.clear_history()
+        result = self.app.clear_history()
+        assert "cleared successfully" in result
         assert len(self.app.command_history) == 0
         assert list(self.app.command_history.columns) == ["Command", "Result", "Timestamp"]
+
+        # Verify file is cleared
+        assert os.path.exists(self.history_path)
+        df = pd.read_csv(self.history_path)
+        assert len(df) == 0
 
     def test_delete_history_record(self):
         """Test deleting a specific history record"""
@@ -90,10 +96,30 @@ class TestApp:
         self.app.execute_command("add 2 4")
         assert len(self.app.command_history) == 2
 
+        # Test invalid index
+        result = self.app.delete_history_record(-1)
+        assert "Invalid command index" in result
+        assert len(self.app.command_history) == 2
+
+        result = self.app.delete_history_record(2)
+        assert "Invalid command index" in result
+        assert len(self.app.command_history) == 2
+
+        # Test invalid format
+        result = self.app.delete_history_record("abc")
+        assert "Invalid index format" in result
+        assert len(self.app.command_history) == 2
+
         # Delete first record
-        self.app.delete_history_record(0)
+        result = self.app.delete_history_record(0)
+        assert "Deleted command" in result
         assert len(self.app.command_history) == 1
         assert "6" in str(self.app.command_history.iloc[0]["Result"])
+
+        # Verify file is updated
+        df = pd.read_csv(self.history_path)
+        assert len(df) == 1
+        assert "6" in str(df.iloc[0]["Result"])
 
     def test_history_persistence(self):
         """Test that command history is saved and loaded correctly"""
@@ -122,3 +148,49 @@ class TestApp:
         assert last_entry["Command"] == "add 5 3"
         assert "8" in str(last_entry["Result"])
         assert pd.notna(last_entry["Timestamp"])
+
+    def test_clear_history_command(self):
+        """Test clear_history command"""
+        # Add some commands
+        self.app.command_handler.register_command("add", AddCommand())
+        self.app.execute_command("add 5 3")
+        assert len(self.app.command_history) == 1
+
+        # Clear history using command
+        result = self.app.execute_command("clear_history")
+        assert "cleared successfully" in result
+        assert len(self.app.command_history) == 0
+
+    def test_delete_history_command(self):
+        """Test delete_history command"""
+        # Add some commands
+        self.app.command_handler.register_command("add", AddCommand())
+        self.app.execute_command("add 5 3")
+        self.app.execute_command("add 2 4")
+        assert len(self.app.command_history) == 2
+
+        # Test missing index
+        result = self.app.execute_command("delete_history")
+        assert "requires an index argument" in result
+        assert len(self.app.command_history) == 2
+
+        # Test invalid index
+        result = self.app.execute_command("delete_history -1")
+        assert "Invalid command index" in result
+        assert len(self.app.command_history) == 2
+
+        # Test out of range index
+        result = self.app.execute_command("delete_history 2")
+        assert "Invalid command index" in result
+        assert len(self.app.command_history) == 2
+
+        # Test invalid format
+        result = self.app.execute_command("delete_history abc")
+        assert "Invalid index format" in result
+        assert len(self.app.command_history) == 2
+
+        # Delete first record
+        result = self.app.execute_command("delete_history 0")
+        assert "Deleted command" in result
+        assert len(self.app.command_history) == 1
+        assert "6" in str(self.app.command_history.iloc[0]["Result"])
