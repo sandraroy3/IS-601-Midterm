@@ -31,6 +31,7 @@ Pandas is used to manage a robust calculation history. Users can:
 
 - Load, save, clear, and delete history records directly through the REPL interface.
 - Efficiently store and manipulate historical calculation data in CSV files.
+- Track both successful calculations and error messages in the history.
 
 ### Professional Logging Practices
 
@@ -38,6 +39,7 @@ Logging is implemented in the application to track operations, data manipulation
 
 - **Log Levels**: Logs differentiate between informational messages, warnings, and errors.
 - **Dynamic Logging Configuration**: Log levels and output destinations can be adjusted using environment variables.
+- **Error Tracking**: All errors are properly logged and returned to users.
 
 ### Advanced Data Handling with Pandas
 
@@ -45,6 +47,7 @@ Pandas is utilized for efficient data handling, including:
 
 - Reading and writing calculation history to and from CSV files.
 - Managing and manipulating the calculation history with a DataFrame for easy access and storage.
+- Proper handling of timestamps and error messages in the history DataFrame.
 
 ### Design Patterns for Scalable Architecture
 
@@ -58,14 +61,95 @@ Key design patterns are applied to improve the flexibility and scalability of th
 
 ### Testing
 
-- Achieve a minimum of **90% test coverage** using **Pytest**.
-- All code should adhere to **PEP 8 standards**, verified by **Pylint**.
-- Unit tests should cover all critical components, ensuring the functionality of the calculator, plugin system, and history management.
+The project includes comprehensive testing:
+
+- Extensive test coverage using **Pytest**, including:
+  - Unit tests for all arithmetic operations
+  - Error handling tests for invalid inputs and edge cases
+  - Command history management tests
+  - Plugin system tests
+  - Multiprocessing tests for command execution
+
+- **Test Organization**:
+  - `test_app.py`: Tests for App class and command handling
+  - `test_plugins.py`: Tests for calculator plugins and their functionality
+  - `test_multiprocessing.py`: Tests for command execution in multiprocessing context
 
 ### Code Quality
 
-- Ensure clean, maintainable code through logical commits and following software engineering best practices.
-- Use **GitHub Actions** to run tests automatically on each commit, ensuring code quality and correctness.
+- **Pylint Configuration**:
+  - Custom `.pylintrc` file for project-specific code style rules
+  - Configured to enforce consistent code style while allowing necessary exceptions
+  - Key configurations include:
+    - Import order rules
+    - Naming conventions
+    - Code structure requirements
+    - Error handling expectations
+
+- **Error Handling**:
+  - Consistent error message format across all commands
+  - Proper handling and logging of edge cases
+  - Clear feedback for invalid inputs
+
+## Setup and Configuration
+
+### Installation
+
+1. Clone the repository
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Environment Variables
+
+Create a `.env` file with the following configurations:
+```
+LOG_LEVEL=INFO
+HISTORY_FILE=history/command_history.csv
+```
+
+### Running Tests
+
+```bash
+# Run all tests with pylint checks
+pytest --pylint
+
+# Run specific test files
+pytest tests/test_app.py
+pytest tests/test_plugins.py
+pytest tests/test_multiprocessing.py
+```
+
+## Usage Examples
+
+### Basic Operations
+```python
+# Addition
+add 5 3
+# Result: 8
+
+# Division with error handling
+divide 6 0
+# Result: Error: Division by zero
+
+# View command history
+history
+```
+
+### Plugin Commands
+```python
+# View available commands
+menu
+
+# Greet command
+greet
+```
 
 ## Version Control and Documentation
 

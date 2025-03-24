@@ -28,17 +28,14 @@ class CsvCommand(Command):
             'IL': 'Illinois',
             'NY': 'New York'  # Newly added state
         }
-        df_states = pd.DataFrame(list(states_abbreviations.items()), columns=['Abbreviation', 'State'])
+        df_states = pd.DataFrame(list(states_abbreviations.items()), 
+                               columns=['State Abbreviation', 'State Name'])
         csv_file_path = os.path.join(data_dir, 'states.csv')
         df_states.to_csv(csv_file_path, index=False)
         
         logging.info(f"States saved to CSV at '{csv_file_path}'.")
-        # This is creating the path for saving the file.
-        csv_file_path = os.path.join(data_dir, 'gpt_states.csv')
-        logging.info(f'the relative path  to save my file is {csv_file_path}')
+        
         # Read the CSV file back into a DataFrame
-        absolute_path = os.path.abspath(csv_file_path)
-        logging.info(f'the absolute path  to save my file is {absolute_path}')
         df_read_states = pd.read_csv(csv_file_path)
         
         # Print and log each state nicely
