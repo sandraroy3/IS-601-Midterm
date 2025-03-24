@@ -1,3 +1,4 @@
+"""App initialization and core functionality."""
 import os
 import pkgutil
 import logging
@@ -48,35 +49,89 @@ class App:
         """Load command history from the CSV file."""
         history_path = 'history/command_history.csv'
         if os.path.exists(history_path):
-            self.command_history = pd.read_csv(history_path)
-            logging.info(f"Loaded command history from {history_path}.")
+            try:
+                self.command_history = pd.read_csv(history_path)
+                logging.info(f"Loaded command history from {history_path}.")
+            except pd.errors.EmptyDataError:
+                self.command_history = pd.DataFrame(columns=["Command", "Result", "Timestamp"])
+                logging.info("Created new command history DataFrame.")
         else:
             logging.info("No previous command history found.")
 
     def save_command_history(self):
         """Save the command history to a CSV file."""
         history_path = 'history/command_history.csv'
-        self.command_history.to_csv(history_path, index=False)
-        logging.info(f"Command history saved to {history_path}.")
+        try:
+            self.command_history.to_csv(history_path, index=False)
+            logging.info(f"Command history saved to {history_path}.")
+        except Exception as e:
+            logging.error(f"Error saving command history: {str(e)}")
 
     def clear_history(self):
         """Clear the command history."""
-        self.command_history = pd.DataFrame(columns=["Command", "Result", "Timestamp"])
-        self.save_command_history()
-        logging.info("Command history cleared.")
+        try:
+            self.command_history = pd.DataFrame(columns=["Command", "Result", "Timestamp"])
+            self.save_command_history()
+            logging.info("Command history cleared.")
+            return "Command history cleared successfully."
+        except Exception as e:
+            error_msg = f"Error clearing history: {str(e)}"
+            logging.error(error_msg)
+            return error_msg
 
     def delete_history_record(self, command_index):
         """Delete a specific history record by index."""
-        if 0 <= command_index < len(self.command_history):
-            self.command_history = self.command_history.drop(index=command_index)
-            self.command_history = self.command_history.reset_index(drop=True)
-            self.save_command_history()
-            logging.info(f"Deleted command at index {command_index}.")
-        else:
-            logging.error(f"Invalid command index: {command_index}.")
+        try:
+            command_index = int(command_index)  # Ensure index is an integer
+            if 0 <= command_index < len(self.command_history):
+                # Get the command being deleted for logging
+                deleted_command = self.command_history.iloc[command_index]["Command"]
+                
+                # Drop the row and reset index
+                self.command_history = self.command_history.drop(self.command_history.index[command_index])
+                self.command_history = self.command_history.reset_index(drop=True)
+                
+                # Save changes
+                self.save_command_history()
+                
+                msg = f"Deleted command '{deleted_command}' at index {command_index}"
+                logging.info(msg)
+                return msg
+            else:
+                error_msg = f"Invalid command index: {command_index}. Index must be between 0 and {len(self.command_history)-1}"
+                logging.error(error_msg)
+                return error_msg
+        except ValueError:
+            error_msg = f"Invalid index format: {command_index}. Must be an integer."
+            logging.error(error_msg)
+            return error_msg
+        except Exception as e:
+            error_msg = f"Error deleting history record: {str(e)}"
+            logging.error(error_msg)
+            return error_msg
 
     def execute_command(self, cmd_input):
         """Execute a command and update history."""
+        if not cmd_input.strip():
+            return "Please enter a command"
+
+        cmd_input = cmd_input.strip()
+        
+        # Handle special history commands directly
+        if cmd_input == "clear_history":
+            return self.clear_history()
+        
+        if cmd_input == "delete_history":
+            return "Error: delete_history requires an index argument"
+            
+        if cmd_input.startswith("delete_history "):
+            try:
+                index = cmd_input.split()[1]
+                return self.delete_history_record(index)
+            except IndexError:
+                return "Error: delete_history requires an index argument"
+        
+        # Handle regular commands
         result = self.command_handler.execute_command(cmd_input)
         
         # Add command to history

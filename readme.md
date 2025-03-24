@@ -227,4 +227,4 @@ Use the REPL to perform calculations, manage history, and access available plugi
 The Advanced Python Calculator combines essential features for a robust command-line application, including arithmetic operations, dynamic plugin integration, and history management using Pandas. By applying design patterns, logging best practices, and maintaining code quality, this project demonstrates real-world software engineering principles.
 
 ## Video Demo
-[Link] (https://drive.google.com/file/d/1ChSq5ovF4TdZWZJTNQQ-mZdXsnFBJsUY/view?usp=drive_link)
+[Link] (https://drive.google.com/file/d/1RxGwslirtFVWESqOFm5lX-x--BbXuNzH/view?usp=drive_link)

@@ -1,11 +1,5 @@
 Command,Result,Timestamp
-add 5 3,8,2025-03-22 13:58:53
-divide 6 0,Error: Division by zero is not allowed.,2025-03-22 13:58:53
-add 7 8,15,2025-03-23 22:25:11
-divide 7 0,Error: Division by zero is not allowed.,2025-03-23 22:28:17
-add 4,Error: 'add' is not a valid command.,2025-03-23 22:28:47
-add 6 7,Error: 'add' is not a valid command.,2025-03-23 22:28:53
-add 4 5,9,2025-03-23 22:32:29
-greet,"Process MainProcess: Hello, World!",2025-03-23 22:33:03
-history,Error: Unknown command 'history',2025-03-23 22:37:23
-,Please enter a command. Type 'menu' for available commands.,2025-03-23 22:38:07
+add 5 3,8,2025-03-23 23:40:05
+divide 6 0,Error: Division by zero is not allowed.,2025-03-23 23:40:05
+add 7 -4,3,2025-03-23 23:40:11
+subtract 89 100,-11,2025-03-23 23:40:18
